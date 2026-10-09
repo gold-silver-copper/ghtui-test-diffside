@@ -32,7 +32,7 @@ func f4(x int) int {
 
 func f5(x int) int {
 	if x > 5 {
-		return x	// tab-aligned comment 5
+		return x * 2	// changed 5
 	}
 	return 5
 }
@@ -207,7 +207,6 @@ func f29(x int) int {
 
 func f30(x int) int {
 	if x > 30 {
-		return x	// tab-aligned comment 30
 	}
 	return 30
 }
@@ -216,7 +215,8 @@ func f31(x int) int {
 	if x > 31 {
 		return x	// tab-aligned comment 31
 	}
-	return 31
+	return 31 + 1	// added
+	// extra line
 }
 
 func f32(x int) int {
@@ -346,7 +346,7 @@ func f49(x int) int {
 }
 
 func f50(x int) int {
-	if x > 50 {
+	if x >= 50 && x < 1000 {
 		return x	// tab-aligned comment 50
 	}
 	return 50
